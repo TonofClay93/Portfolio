@@ -1,7 +1,9 @@
 :root {
-  --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
+  --primary-color: rgb(22, 68, 100);
+  --secondary-color: #38a3a5;
+  --thirdity-color: #57cc99;
+  --tertiary-color: #80ed99;
+  --text-color: #3e00ff;
 }
 
 * {
@@ -44,7 +46,7 @@ header h1 {
 
 header a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 header nav {
@@ -118,7 +120,8 @@ section {
   align-items: flex-start;
   background-attachment: fixed;
   background-position: 80%;
-  background-color: orangered;
+  background-color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .hero-cta {
@@ -138,18 +141,23 @@ section {
 }
 
 .hero-form {
-  border: 3px solid var(--secondary-color);
-  background-color: green;
+  border: 3px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
   padding: 20px;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   width: 40%;
   margin: 3.5%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
   top: 30px;
-
+  
 }
+
+.hero-form:hover {
+  background-color: rgba(255, 152, 010, .6);
+}
+
 
 
 .hero-form h3 {
@@ -171,7 +179,7 @@ section {
 .section-title {
   font-size: 48px;
   border-bottom: 3px solid;
-  color: var(--secondary-color);
+  color: var(--text-color);
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -198,7 +206,7 @@ section {
 
 /* previous work and current  */
 .steps { 
-  background: pink;
+  background: var(--secondary-color);
 }
 
 .step {
@@ -216,7 +224,7 @@ section {
 }
 
 .step h3 {
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-size: 36px;
   flex: 1 30%;
 }
@@ -226,8 +234,13 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #9c15eb;
- border: 2px solid #11a104;
+}
+
+.step-info:hover{
+  background-color:rgba(34, 87, 122, .2);
+  border: var(--text-color) ridge;
+}
+
 }
 
 .step-img {
@@ -251,12 +264,13 @@ section {
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 /* REACH OUT STYLES START */
 .contact {
   background: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .contact h2 {
@@ -294,39 +308,10 @@ section {
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
+.contact-form {
   text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
 }
 
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-}
 
 .contact-info a {
   color: var(--primary-color);
@@ -393,6 +378,10 @@ section {
   .contact-info iframe{
     flex: 1 100%;
   }
+
+  .step-info {
+    border-left:  black solid 3px;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -404,6 +393,7 @@ section {
   .step h3 {
     flex: 1 100%;
     text-align: center;
+    border-bottom: black solid 3px;
   }
 
   .step-info {
@@ -425,6 +415,10 @@ section {
 
   .trainer-bio h3, .trainer-bio h4 {
     display: block;
+  }
+
+  .step-info {
+    border-left: none;
   }
 }
 
@@ -456,5 +450,9 @@ section {
 
   .contact-form {
     order: 3;
+  }
+
+  .step-info {
+    border-left: none;
   }
 }
