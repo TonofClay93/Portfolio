@@ -201,7 +201,7 @@ section {
 /* About Me */
 .intro p {
   line-height: 1.7;
-  color: var(--tertiary-color);
+  color: var(--text-color);
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
@@ -222,9 +222,16 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-image: url(./Images/computer-code-cookie-consent-line-stock-1920.jpg);
+ background-color: rgba(34, 87, 122, .2);
+ 
   text-align: center;
   
+}
+
+.main-work:hover{
+  background-image: url(./Images/computer-code-cookie-consent-line-stock-1920.jpg);
+  background-size: cover;
+
 }
 
 .step-main h3 {
@@ -304,6 +311,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   height: 275px;
+  background-color: rgba(34, 87, 122, .2)
 }
 
 .step-info:hover{
@@ -327,7 +335,7 @@ section {
 }
 
 .step-text p {
-  color: whitesmoke;
+  color: var(--text-color);
   font-size: 18px;
 }
 
