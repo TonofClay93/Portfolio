@@ -9,9 +9,12 @@ https://tonofclay93.github.io/Portfolio/
 
 # HTML Page Screenshots
 
-<img src="/assets/Images/Screenshot-1.jpg"/>
+<img src="/assets/Images/Screenshot-1.jpg">
 
-<img src="/assets/images/Screenshot-2.jpg"/>
+
+
+
+<img src="/assets/images/Screenshot-2.jpg">
 
 
 
