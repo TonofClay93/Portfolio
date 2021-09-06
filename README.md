@@ -14,7 +14,7 @@ https://tonofclay93.github.io/Portfolio/
 
 
 
-<img src="/assets/images/Screenshot-2.jpg">
+<img src="/assets/Images/Screenshot-2.jpg">
 
 
 
