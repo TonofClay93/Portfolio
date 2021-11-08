@@ -1,22 +1,4 @@
-# Module 2 challenge : Personal Portfolio
-
-Here i have Created, well attempted, to create my own portfolio. 
-
-
-https://tonofclay93.github.io/Portfolio/
-
-<br />
-
-# HTML Page Screenshots
-
-<img src="/assets/Images/Screenshot-1.jpg">
-
-
-
-
-<img src="/assets/Images/Screenshot-2.jpg">
-
-
-
-  
+<b>My Portfolio!</b> <br/><br/>
+I created a professional portfolio using advanced CSS techniques.<br/><br/>
+)
 
